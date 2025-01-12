@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Косметологічна клініка</title>
   </head>
+  <link rel="stylesheet" href="./styles/style.css" />
   <body>
     <header>
       <nav>
@@ -12,10 +13,10 @@
           <img src="./images/logo.svg" alt="Логотип косметологічної клініки" />
         </a>
         <ul>
-          <li><a href="#about-us-section">Про нас</a></li>
-          <li><a href="#why-us-section">Чому ми</a></li>
-          <li><a href="#our-procedures">Наші процедури</a></li>
-          <li><a href="#contact-section">Контакти</a></li>
+          <li><a class="link" href="#about-us-section">Про нас</a></li>
+          <li><a class="link" href="#why-us-section">Чому ми</a></li>
+          <li><a class="link" href="#our-procedures">Наші процедури</a></li>
+          <li><a class="link" href="#contact-section">Контакти</a></li>
         </ul>
         <ul>
           <li>
@@ -41,20 +42,25 @@
           </li>
         </ul>
       </nav>
-      <p>Косметологічна клініка</p>
-      <h1 lang="en">Beauty Zone</h1>
-      <button type="button">Замовити дзвінок</button>
-      <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
     </header>
     <main>
+      <section>
+        <p>Косметологічна клініка</p>
+        <h1 lang="en" class="hero-title">Beauty Zone</h1>
+        <button class="button" type="button">Замовити дзвінок</button>
+        <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+      </section>
       <section id="about-us-section">
-        <h2>Перевтілюйтесь в <span lang="en">beauty zone</span>!</h2>
+        <h2 class="section-title">
+          Перевтілюйтесь в
+          <span lang="en" class="color-accent">beauty zone</span>!
+        </h2>
         <p>
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
         </p>
         <p>
-          B <span lang="en">beauty zone</span> ми гарантуємо найвищі стандарти
+          B <span lang="en">Beauty zone</span> ми гарантуємо найвищі стандарти
           якості та приємний сервіс. Наші косметологічні процедури та препарати
           допоможуть вам підтримувати свою красу та молодість.
         </p>
@@ -65,7 +71,9 @@
         />
       </section>
       <section id="why-us-section">
-        <h2>Чому люди обирають нас</h2>
+        <h2 class="section-title">
+          Чому люди <span class="color-accent">обирають нас</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -100,7 +108,9 @@
         </ul>
       </section>
       <section id="our-procedures">
-        <h2>Наші процедури</h2>
+        <h2 class="section-title">
+          Наші <span class="color-accent">процедури</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -131,7 +141,9 @@
         <!-- scroller -->
       </section>
       <section id="contact-section">
-        <h2>Як нас знайти</h2>
+        <h2 class="section-title">
+          Як нас <span class="color-accent">знайти</span>
+        </h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2see!4v1736551882789!5m2!1suk!2see"
           width="605"
@@ -149,10 +161,10 @@
         </a>
 
         <ul>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Чому ми</a></li>
-          <li><a href="#">Наші процедури</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="link" href="#">Про нас</a></li>
+          <li><a class="link" href="#">Чому ми</a></li>
+          <li><a class="link" href="#">Наші процедури</a></li>
+          <li><a class="link" href="#">Контакти</a></li>
         </ul>
       </nav>
       <address>
