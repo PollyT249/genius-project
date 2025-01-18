@@ -65,16 +65,37 @@ ul {
   list-style-type: none;
 }
 
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Section titles */
+
+.section-title {
+  font-family: var(--font-brand-secondary);
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: var(--color-brand-dark);
+}
+
+.section-title .color-accent {
+  color: var(--color-brand-light);
+}
+
 /* Header */
 
-.logo {
+/* .logo {
   font-family: var(--font-brand-secondary);
   font-weight: 700;
   font-size: 22px;
   line-height: 1;
   text-transform: capitalize;
   color: var(--color-brand-light);
-}
+} */
 
 /* Links */
 
@@ -99,6 +120,13 @@ ul {
 
 /* Hero section */
 
+.hero-section {
+  background-image: url("../images/hero-section-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
 .hero-cosmetology-clinic {
   font-size: 18px;
 }
@@ -120,6 +148,7 @@ ul {
   background-color: var(--color-brand-light);
   border-radius: 32px;
   padding: 16px 32px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -131,16 +160,23 @@ ul {
 .hero-free-consultation {
   font-size: 12px;
   line-height: 1.5;
-  text-align: center;
   color: #4a4a4a;
 }
 
 /* About us section */
 
+.about-us-section-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
 .about-us-section-title {
   font-family: var(--font-brand-secondary);
   font-weight: 700;
   font-size: 64px;
+  line-height: 1.5;
   color: var(--color-brand-dark);
 }
 
@@ -162,21 +198,9 @@ ul {
 
 /* Why us section */
 
-.why-us-section-title {
-  font-family: var(--font-brand-secondary);
-  font-weight: 700;
-  font-size: 64px;
-  text-align: center;
-  color: var(--color-brand-dark);
-}
-
-.why-us-section-title .color-accent {
-  color: var(--color-brand-light);
-}
-
 .why-us-section-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -188,42 +212,33 @@ ul {
   color: #000;
 }
 
-/* Our procedures section */
-
-.our-procedures-section-title {
-  font-family: var(--font-brand-secondary);
-  font-weight: 700;
-  font-size: 64px;
-  text-align: center;
-  color: var(--color-brand-dark);
+.why-us-card img {
+  display: block;
+  margin: 0 auto;
 }
 
-.our-procedures-section-title .color-accent {
-  color: var(--color-brand-light);
+/* Our procedures section */
+
+.procedure-images {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Contact section */
 
 .contact-section-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .contact-section-form-container {
-  background-color: #011c44;
+  background-color: var(--color-brand-dark);
+  padding: 48px 75px;
   /* temporary, needs to be replaced by picture */
 }
 
 .contact-section-form-field {
   text-align: center;
-}
-
-.contact-section-title {
-  font-family: var(--font-brand-secondary);
-  font-weight: 700;
-  font-size: 64px;
-  text-align: center;
-  color: var(--color-brand-dark);
 }
 
 .contact-section-sign-up {
@@ -233,7 +248,7 @@ ul {
   color: #fff;
 }
 
-.contact-section .color-accent {
+.contact-section-sign-up .color-accent {
   color: var(--color-brand-light);
 }
 
@@ -268,21 +283,33 @@ ul {
 
 /* Footer section */
 
-/* .footer-container {
-  background-color: #747272;
-} */
+.footer-container {
+  background-color: var(--color-brand-dark);
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 100px;
+}
 
 .footer-link {
   font-size: 16px;
-  /* color: #fff; */
+  color: #fff;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   text-decoration: none;
 }
 
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 .footer-address-link {
   font-size: 16px;
-  /* color: #fff; */
+  color: #fff;
   text-decoration: none;
+}
+
+.footer-address-link:hover {
+  text-decoration: underline;
 }
 
 .footer-address-copyright {

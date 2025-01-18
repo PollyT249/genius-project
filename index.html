@@ -36,7 +36,7 @@
           <li>
             <a class="link-icon" href="#">
               <img
-                src="./images/ph_instagram-logo-light.svg"
+                src="./images/ph_instagram-icon-dark.svg"
                 alt="Іконка інстаграму"
               />
             </a>
@@ -46,12 +46,17 @@
     </header>
     <main>
       <section class="hero-section">
-        <p class="hero-cosmetology-clinic">Косметологічна клініка</p>
-        <h1 lang="en" class="hero-title">Beauty Zone</h1>
-        <button class="button" type="button">Замовити дзвінок</button>
-        <p class="hero-free-consultation">
-          Запишись та отримай безкоштовну консультацію нашого косметолога
-        </p>
+        <div class="hero-container">
+          <p class="hero-cosmetology-clinic">Косметологічна клініка</p>
+          <h1 lang="en" class="hero-title">
+            Beauty <br />
+            Zone
+          </h1>
+          <button class="button" type="button">Замовити дзвінок</button>
+          <p class="hero-free-consultation">
+            Запишись та отримай безкоштовну консультацію нашого косметолога
+          </p>
+        </div>
       </section>
       <section class="about-us-section" id="about-us-section">
         <div class="about-us-section-container">
@@ -72,21 +77,30 @@
             </p>
             <p>З нами краса назавжди!</p>
           </div>
-          <img
-            src="./images/woman-after-procedure.jpg"
-            alt="Трасформація обличчя жінки після процедури"
-          />
+          <div class="about-us-picture">
+            <img
+              src="./images/woman-after-procedure.jpg"
+              alt="Трасформація обличчя жінки після процедури"
+            />
+          </div>
         </div>
       </section>
       <section id="why-us-section">
         <div class="why-us-section-content">
-          <h2 class="why-us-section-title">
-            Чому люди <span class="color-accent">обирають нас</span>
+          <h2 class="section-title">
+            Чому люди
+            <span class="color-accent">
+              <br />
+              обирають нас</span
+            >
           </h2>
           <ul class="why-us-section-list">
             <li>
               <article class="why-us-card">
-                <img src="./images/game-icons_materials-science.svg" alt="" />
+                <img
+                  src="./images/game-icons_materials-science.svg"
+                  alt="Іконка наукових матеріалів"
+                />
                 <div class="why-us-card-text">
                   <p>
                     Всі наші косметологи мають вищу медичну освіту та стаж
@@ -98,8 +112,8 @@
             <li>
               <article class="why-us-card">
                 <img
-                  src="./images/medicinecosmeticsbottletreatment_109776 1.svg"
-                  alt=""
+                  src="./images/medicine-cosmetics-bottle-treatment.svg"
+                  alt="Іконка медичної косметики"
                 />
                 <div class="why-us-card-text">
                   <p>
@@ -111,7 +125,7 @@
             </li>
             <li>
               <article class="why-us-card">
-                <img src="./images/ph_crown-light.svg" alt="" />
+                <img src="./images/ph_crown-light.svg" alt="Іконка корони" />
                 <div class="why-us-card-text">
                   <p>
                     Наша мета - підкреслити переваги та приховати недоліки, а не
@@ -124,10 +138,10 @@
         </div>
       </section>
       <section id="our-procedures">
-        <h2 class="our-procedures-section-title">
+        <h2 class="section-title">
           Наші <span class="color-accent">процедури</span>
         </h2>
-        <ul>
+        <ul class="procedure-images">
           <li>
             <article>
               <img
@@ -157,7 +171,7 @@
         <!-- scroller -->
       </section>
       <section class="contact-section" id="contact-section">
-        <h2 class="contact-section-title">
+        <h2 class="section-title">
           Як нас <span class="color-accent">знайти</span>
         </h2>
         <div class="contact-section-container">
@@ -172,8 +186,9 @@
 
           <div class="contact-section-form-container">
             <p class="contact-section-sign-up">
-              Запишіться <span class="color-accent">безкоштовно</span> та
-              отримайте подарунок
+              Запишіться <span class="color-accent">безкоштовно</span>
+              <br />
+              та отримайте подарунок
             </p>
             <form name="contact-form" autocomplete="off">
               <div class="contact-section-form-field">
@@ -214,9 +229,9 @@
                 Записатись безкоштовно
               </button>
               <p class="form-terms">
-                Натискаючи на кнопку я погоджуюсь з
+                Натискаючи на кнопку я погоджуюсь <br />
                 <a class="form-terms-link" href="#">
-                  політикою конфіденційності
+                  з політикою конфіденційності
                 </a>
               </p>
             </form>
@@ -226,14 +241,15 @@
     </main>
     <footer>
       <div class="footer-container">
-        <nav>
+        <div>
           <a class="logo" href="/">
             <img
               src="./images/logo.svg"
               alt="Логотип косметологічної клініки"
             />
           </a>
-
+        </div>
+        <div>
           <ul>
             <li><a class="footer-link" href="#about-us-section">Про нас</a></li>
             <li><a class="footer-link" href="#why-us-section">Чому ми</a></li>
@@ -242,7 +258,7 @@
             </li>
             <li><a class="footer-link" href="#contact-section">Контакти</a></li>
           </ul>
-        </nav>
+        </div>
 
         <address>
           <ul>
@@ -267,14 +283,17 @@
             <li>
               <a href="tel:+380960000007">
                 <img
-                  src="./images/telephone-receiver-icon.svg"
+                  src="./images/telephone-receiver_icon-light.svg"
                   alt="Іконка телефону"
                 />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./images/uit_facebook-f.svg" alt="Іконка фейсбука" />
+                <img
+                  src="./images/uit_facebook-f-light.svg"
+                  alt="Іконка фейсбука"
+                />
               </a>
             </li>
             <li>
@@ -286,9 +305,11 @@
               </a>
             </li>
           </ul>
+        </address>
+        <div>
           <a class="footer-address-link" href="#">Політика конфіденційності</a>
           <p class="footer-address-copyright">&copy; 2022 Дані захищені</p>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
