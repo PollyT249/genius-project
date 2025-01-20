@@ -9,44 +9,49 @@
 
   <body>
     <header>
-      <nav>
-        <a class="logo" href="/">
-          <img src="./images/logo.svg" alt="Логотип косметологічної клініки" />
-        </a>
-        <ul>
-          <li><a class="link" href="#about-us-section">Про нас</a></li>
-          <li><a class="link" href="#why-us-section">Чому ми</a></li>
-          <li><a class="link" href="#our-procedures">Наші процедури</a></li>
-          <li><a class="link" href="#contact-section">Контакти</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a class="link-icon" href="tel:+380960000007">
-              <img
-                src="./images/telephone-receiver-icon.svg"
-                alt="Іконка телефону"
-              />
-            </a>
-          </li>
-          <li>
-            <a class="link-icon" href="#">
-              <img src="./images/uit_facebook-f.svg" alt="Іконка фейсбука" />
-            </a>
-          </li>
-          <li>
-            <a class="link-icon" href="#">
-              <img
-                src="./images/ph_instagram-icon-dark.svg"
-                alt="Іконка інстаграму"
-              />
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav>
+          <a class="logo" href="/">
+            <img
+              src="./images/logo.svg"
+              alt="Логотип косметологічної клініки"
+            />
+          </a>
+          <ul>
+            <li><a class="link" href="#about-us-section">Про нас</a></li>
+            <li><a class="link" href="#why-us-section">Чому ми</a></li>
+            <li><a class="link" href="#our-procedures">Наші процедури</a></li>
+            <li><a class="link" href="#contact-section">Контакти</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a class="link-icon" href="tel:+380960000007">
+                <img
+                  src="./images/telephone-receiver-icon.svg"
+                  alt="Іконка телефону"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="link-icon" href="#">
+                <img src="./images/uit_facebook-f.svg" alt="Іконка фейсбука" />
+              </a>
+            </li>
+            <li>
+              <a class="link-icon" href="#">
+                <img
+                  src="./images/ph_instagram-icon-dark.svg"
+                  alt="Іконка інстаграму"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="hero-section">
-        <div class="hero-container">
+        <div class="container">
           <p class="hero-cosmetology-clinic">Косметологічна клініка</p>
           <h1 lang="en" class="hero-title">
             Beauty <br />
@@ -54,22 +59,23 @@
           </h1>
           <button class="button" type="button">Замовити дзвінок</button>
           <p class="hero-free-consultation">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
+            Запишись та отримай безкоштовну <br />консультацію нашого
+            косметолога
           </p>
         </div>
       </section>
-      <section class="about-us-section" id="about-us-section">
-        <div class="about-us-section-container">
+      <section class="section" id="about-us-section">
+        <div class="about-us-section container">
           <div class="about-us-section-content">
-            <h2 class="about-us-section-title">
+            <h2 class="about-us-title section-title">
               Перевтілюйтесь в
               <span lang="en" class="brand-color-accent">beauty zone!</span>
             </h2>
-            <p>
+            <p class="we-offer">
               Наша косметологічна клініка пропонує вам професійні послуги з
               догляду за шкірою обличчя та тіла.
             </p>
-            <p>
+            <p class="we-guarantee">
               B <span lang="en" class="brand-accent">beauty zone</span> ми
               гарантуємо найвищі стандарти якості та приємний сервіс. Наші
               косметологічні процедури та препарати допоможуть вам підтримувати
@@ -85,8 +91,8 @@
           </div>
         </div>
       </section>
-      <section id="why-us-section">
-        <div class="why-us-section-content">
+      <section id="section">
+        <div class="container">
           <h2 class="section-title">
             Чому люди
             <span class="color-accent">
@@ -137,110 +143,114 @@
           </ul>
         </div>
       </section>
-      <section id="our-procedures">
-        <h2 class="section-title">
-          Наші <span class="color-accent">процедури</span>
-        </h2>
-        <ul class="procedure-images">
-          <li>
-            <article>
-              <img
-                src="./images/face-mask.jpg"
-                alt="Жінка з маскою на обличчі"
-              />
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                src="./images/face-injection.jpg"
-                alt="Жінка, якій роблять ін'єкцію на обличчі"
-              />
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                src="./images/face-cleaning.jpg"
-                alt="Жінка, якій роблять чистку обличчя"
-              />
-            </article>
-          </li>
-        </ul>
+      <section class="section" id="our-procedures">
+        <div class="container">
+          <h2 class="section-title">
+            Наші <span class="color-accent">процедури</span>
+          </h2>
+          <ul class="procedure-images">
+            <li>
+              <article>
+                <img
+                  src="./images/face-mask.jpg"
+                  alt="Жінка з маскою на обличчі"
+                />
+              </article>
+            </li>
+            <li>
+              <article>
+                <img
+                  src="./images/face-injection.jpg"
+                  alt="Жінка, якій роблять ін'єкцію на обличчі"
+                />
+              </article>
+            </li>
+            <li>
+              <article>
+                <img
+                  src="./images/face-cleaning.jpg"
+                  alt="Жінка, якій роблять чистку обличчя"
+                />
+              </article>
+            </li>
+          </ul>
+        </div>
 
         <!-- scroller -->
       </section>
-      <section class="contact-section" id="contact-section">
-        <h2 class="section-title">
-          Як нас <span class="color-accent">знайти</span>
-        </h2>
-        <div class="contact-section-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2see!4v1736551882789!5m2!1suk!2see"
-            width="605"
-            height="481"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+      <section class="section" id="contact-section">
+        <div class="container">
+          <h2 class="section-title">
+            Як нас <span class="color-accent">знайти</span>
+          </h2>
+          <div class="contact-section-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2see!4v1736551882789!5m2!1suk!2see"
+              width="605"
+              height="481"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
 
-          <div class="contact-section-form-container">
-            <p class="contact-section-sign-up">
-              Запишіться <span class="color-accent">безкоштовно</span>
-              <br />
-              та отримайте подарунок
-            </p>
-            <form name="contact-form" autocomplete="off">
-              <div class="contact-section-form-field">
-                <input
-                  class="input-control"
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                  placeholder="Ваше ім'я та прізвище"
-                  required
-                />
-              </div>
-
-              <div class="contact-section-form-field">
-                <input
-                  class="input-control"
-                  type="tel"
-                  name="user-tel"
-                  id="user-tel"
-                  placeholder="Ваш номер телефону"
-                  pattern="^\+[0-9]{12}"
-                  required
-                />
-              </div>
-
-              <div class="contact-section-form-field">
-                <input
-                  class="input-control"
-                  type="email"
-                  name="user-email"
-                  id="user-email"
-                  placeholder="Ваша електронна пошта"
-                  required
-                />
-              </div>
-
-              <button class="contact-section-button" type="submit">
-                Записатись безкоштовно
-              </button>
-              <p class="form-terms">
-                Натискаючи на кнопку я погоджуюсь <br />
-                <a class="form-terms-link" href="#">
-                  з політикою конфіденційності
-                </a>
+            <div class="contact-section-form-container">
+              <p class="contact-section-sign-up">
+                Запишіться <span class="color-accent">безкоштовно</span>
+                <br />
+                та отримайте подарунок
               </p>
-            </form>
+              <form name="contact-form" autocomplete="off">
+                <div class="contact-section-form-field">
+                  <input
+                    class="input-control"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                    required
+                  />
+                </div>
+
+                <div class="contact-section-form-field">
+                  <input
+                    class="input-control"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Ваш номер телефону"
+                    pattern="^\+[0-9]{12}"
+                    required
+                  />
+                </div>
+
+                <div class="contact-section-form-field">
+                  <input
+                    class="input-control"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Ваша електронна пошта"
+                    required
+                  />
+                </div>
+
+                <button class="contact-section-button" type="submit">
+                  Записатись безкоштовно
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь <br />
+                  <a class="form-terms-link" href="#">
+                    з політикою конфіденційності
+                  </a>
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="footer-container">
+      <div class="footer-container container">
         <div>
           <a class="logo" href="/">
             <img
