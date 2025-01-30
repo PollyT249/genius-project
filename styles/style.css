@@ -47,6 +47,7 @@ body {
   color: var(--color-brand-dark);
   font-family: var(--font-brand-primary);
   font-weight: 400;
+  /* max-width: 1440px; */
 }
 
 img {
@@ -164,13 +165,13 @@ p {
   max-width: 530px;
 }
 
-/* .hero-section .container {
+.hero-section {
   background-image: url("../images/hero-section-bg.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   padding: 122px 0 126px 0;
-} */
+}
 
 .hero-cosmetology-clinic {
   margin-bottom: 16px;
@@ -312,9 +313,12 @@ p {
 
 .contact-section-form-container {
   border-radius: 32px;
-  padding: 48px 75px;
+  padding: 48px 56px;
+  background-image: url(../images/form-background.png);
   background-color: var(--color-brand-dark);
-  /* temporary, needs to be replaced by picture */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact-section-sign-up {
@@ -367,12 +371,16 @@ p {
 
 /* Footer section */
 
-footer {
-  padding-top: 48px;
+.footer {
+  /* padding-top: 48px; */
+  background-image: url(../images/footer-background.png);
+  background-color: var(--color-brand-dark);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.footer-container {
-  background-color: var(--color-brand-dark);
+.footer-content {
   display: flex;
   justify-content: space-between;
   padding: 56px 100px;
