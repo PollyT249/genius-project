@@ -107,14 +107,30 @@ p {
 
 /* Header */
 
-/* .logo {
-  font-family: var(--font-brand-secondary);
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1;
-  text-transform: capitalize;
-  color: var(--color-brand-light);
-} */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-contacts {
+  display: flex;
+  gap: 32px;
+}
 
 /* Links */
 
@@ -139,13 +155,22 @@ p {
 
 /* Hero section */
 
-.hero-section .container {
+.hero-section {
+  padding-bottom: 63px;
+}
+
+.container-content {
+  padding-left: 206px;
+  max-width: 530px;
+}
+
+/* .hero-section .container {
   background-image: url("../images/hero-section-bg.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   padding: 122px 0 126px 0;
-}
+} */
 
 .hero-cosmetology-clinic {
   margin-bottom: 16px;
@@ -188,14 +213,31 @@ p {
 /* About us section */
 
 .about-us-section {
+  padding: 63px 0 88px 0;
+}
+
+.about-us-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-us-content {
+  max-width: 700px;
+  font-size: 22px;
+  line-height: 1.7;
+  color: var(--color-brand-dark);
 }
 
 .about-us-title {
   margin-bottom: 40px;
   text-align: start;
   line-height: 1.5;
+}
+
+.about-us-title .brand-color-accent {
+  color: var(--color-brand-light);
+  text-transform: capitalize;
 }
 
 .we-offer {
@@ -206,29 +248,30 @@ p {
   margin-bottom: 0;
 }
 
-.about-us-title .brand-color-accent {
-  color: var(--color-brand-light);
-  text-transform: capitalize;
-}
-
-.about-us-section-content {
-  font-size: 22px;
-  line-height: 1.7;
-  color: var(--color-brand-dark);
-}
-
-.about-us-section-content .brand-accent {
+.we-guarantee .brand-accent {
   font-weight: 600;
   text-transform: capitalize;
 }
 
 /* Why us section */
 
-.why-us-section-list {
+.why-us-section {
+  padding-top: 88px;
+}
+
+.why-us-list {
   display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  gap: 56px;
+}
+
+.why-us-item {
+  border: 1px solid #0950d3;
+  border-radius: 32px;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+  background: #fff;
+  padding: 24px 32px;
+  max-width: 316px;
 }
 
 .why-us-card-text {
@@ -241,20 +284,30 @@ p {
 .why-us-card img {
   display: block;
   margin: 0 auto;
+  padding-bottom: 8px;
 }
 
 /* Our procedures section */
+.our-procedures-container {
+  max-width: 1064px;
+}
 
-.procedure-images {
+.procedures-list {
   display: flex;
-  justify-content: space-evenly;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.procedures-item {
+  flex-basis: calc((100% - 32px) / 3);
 }
 
 /* Contact section */
 
 .contact-section-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 32px;
 }
 
 .contact-section-form-container {
@@ -326,6 +379,7 @@ footer {
 }
 
 .footer-link {
+  margin-bottom: 16px;
   font-size: 16px;
   color: #fff;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -337,9 +391,15 @@ footer {
 }
 
 .footer-address-link {
+  margin-bottom: 16px;
   font-size: 16px;
   color: #fff;
   text-decoration: none;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 28px;
 }
 
 .footer-address-link:hover {
