@@ -172,7 +172,7 @@ a {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding: 122px 0 126px 0;
+  padding: 122px 0 63px 0;
 }
 
 .hero-cosmetology-clinic {
@@ -293,6 +293,7 @@ a {
 }
 
 /* Our procedures section */
+
 .procedures-container {
   display: flex;
   align-items: center;
