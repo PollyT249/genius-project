@@ -147,11 +147,11 @@ p {
 }
 
 .link-icon img {
-  color: var(--color-brand-dark);
+  fill: var(--color-brand-dark);
 }
 
 .link-icon:hover {
-  color: #fff;
+  fill: var(--color-brand-light);
 }
 
 /* Hero section */
@@ -282,14 +282,15 @@ p {
   color: #000;
 }
 
-.why-us-card img {
+.card-icon {
   display: block;
   margin: 0 auto;
   padding-bottom: 8px;
+  fill: var(--color-brand-light);
 }
 
 /* Our procedures section */
-.our-procedures-container {
+.procedures-container {
   max-width: 1064px;
 }
 
@@ -301,6 +302,27 @@ p {
 
 .procedures-item {
   flex-basis: calc((100% - 32px) / 3);
+}
+
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-brand-dark);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-brand-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-brand-light);
+  fill: #fff;
+  border: transparent;
 }
 
 /* Contact section */
@@ -395,7 +417,7 @@ p {
 }
 
 .footer-link:hover {
-  text-decoration: underline;
+  color: var(--color-brand-light);
 }
 
 .footer-address-link {
@@ -410,8 +432,16 @@ p {
   gap: 28px;
 }
 
+.contact-icon {
+  fill: #fff;
+}
+
+.contact-icon:hover {
+  fill: var(--color-brand-light);
+}
+
 .footer-address-link:hover {
-  text-decoration: underline;
+  color: var(--color-brand-light);
 }
 
 .footer-address-copyright {
