@@ -411,12 +411,24 @@ a {
 /* Footer section */
 
 .footer {
+  position: relative;
   padding: 56px 0;
   background-image: url(../images/footer-background.png);
   background-color: var(--color-brand-dark);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer::after {
+  position: absolute;
+  width: 258px;
+  height: 152px;
+  right: -10px;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-image: url("../images/decor-cosmetic-bottles.png");
+  content: "";
 }
 
 .footer-container {
@@ -475,4 +487,38 @@ a {
 .address-copyright {
   font-size: 13px;
   color: #747272;
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(137, 149, 167, 0.5);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 724px;
+  height: 680px;
+  background-image: url("../images/modal-background.png");
+  background-color: var(--color-brand-dark);
+  border-radius: 48px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
 }
