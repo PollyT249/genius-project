@@ -281,6 +281,58 @@ a {
   text-transform: capitalize;
 }
 
+.woman-procedure {
+  position: relative;
+}
+
+.woman-before {
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+  transform: translateX(-169px);
+}
+
+.icon-Star-1 {
+  position: absolute;
+  left: -50px;
+  bottom: 230px;
+  fill: var(--color-secondary-dark-blue);
+  animation: scale 5s infinite linear;
+}
+
+.icon-Star-2 {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  fill: var(--color-primary-light-blue);
+  animation: scale 4s infinite linear;
+}
+
+.icon-Star-3 {
+  position: absolute;
+  right: 40px;
+  top: 260px;
+  fill: var(--color-secondary-light-gray);
+  animation: scale 3s infinite linear;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.5) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.woman-after {
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+  transform: translateY(40px);
+}
+
 /* Sections background */
 
 .sections-background {
