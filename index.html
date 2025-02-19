@@ -100,14 +100,14 @@
                 alt="Жіноче обличчя перед процедурою"
                 class="woman-before"
               />
-              <svg class="icon-Star-1" width="64" height="64">
-                <use href="./images/stars.svg#icon-Star-1"></use>
+              <svg class="icon-star-1" width="64" height="64">
+                <use xlink:href="./images/icons.svg#icon-star-1"></use>
               </svg>
-              <svg class="icon icon-Star-2" width="40" height="40">
-                <use href="./images/stars.svg#icon-Star-2"></use>
+              <svg class="icon-star-2" width="40" height="40">
+                <use xlink:href="./images/icons.svg#icon-star-2"></use>
               </svg>
-              <svg class="icon icon-Star-3" width="16" height="16">
-                <use href="./images/stars.svg#icon-Star-3"></use>
+              <svg class="icon-star-3" width="16" height="16">
+                <use xlink:href="./images/icons.svg#icon-star-2"></use>
               </svg>
 
               <img
@@ -255,6 +255,7 @@
                     name="user-name"
                     id="user-name"
                     placeholder="Ваше ім'я та прізвище"
+                    pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
                     required
                   />
                 </div>
@@ -286,6 +287,7 @@
                     name="user-email"
                     id="user-email"
                     placeholder="Ваша електронна пошта"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                     required
                   />
                 </div>
@@ -403,6 +405,7 @@
               name="user-name"
               id="user-name"
               placeholder="Ваше ім'я та прізвище"
+              pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
               required
             />
           </div>
@@ -428,6 +431,7 @@
               name="user-email"
               id="user-email"
               placeholder="Ваша електронна пошта"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
               required
             />
           </div>

@@ -157,7 +157,7 @@ a {
   font-weight: 700;
   font-size: 18px;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
 .link:hover {
@@ -166,7 +166,7 @@ a {
 
 .link-icon {
   fill: var(--color-primary-dark-blue);
-  transition: fill 0.3s;
+  transition: fill 0.2s;
 }
 
 .link-icon:hover {
@@ -223,7 +223,7 @@ a {
   padding: 16px 32px;
   border: 2px solid var(--color-primary-light-blue);
   cursor: pointer;
-  transition: border 0.3s, background-color 0.3s, color 0.3s;
+  transition: border 0.2s, background-color 0.2s, color 0.2s;
 }
 
 .button:hover {
@@ -291,7 +291,7 @@ a {
   transform: translateX(-169px);
 }
 
-.icon-Star-1 {
+.icon-star-1 {
   position: absolute;
   left: -50px;
   bottom: 230px;
@@ -299,7 +299,7 @@ a {
   animation: scale 5s infinite linear;
 }
 
-.icon-Star-2 {
+.icon-star-2 {
   position: absolute;
   right: 0;
   top: 40px;
@@ -307,7 +307,7 @@ a {
   animation: scale 4s infinite linear;
 }
 
-.icon-Star-3 {
+.icon-star-3 {
   position: absolute;
   right: 40px;
   top: 260px;
@@ -317,13 +317,13 @@ a {
 
 @keyframes scale {
   0% {
-    transform: scale(1) rotate(0deg);
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.5) rotate(180deg);
+    transform: scale(1.5);
   }
   100% {
-    transform: scale(1) rotate(360deg);
+    transform: scale(1);
   }
 }
 
@@ -402,7 +402,7 @@ a {
 }
 
 .procedures-img {
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 
 .procedures-img:hover {
@@ -513,7 +513,7 @@ a {
   font-size: 16px;
   color: var(--color-primary-white);
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
 .footer-link:hover,
@@ -523,7 +523,7 @@ a {
 
 .contact-icon {
   fill: var(--color-primary-white);
-  transition: fill 0.3s;
+  transition: fill 0.2s;
 }
 
 .contact-icon:hover {
