@@ -1,0 +1,43 @@
+.hero-section {
+  padding: 126px 0 63px 0;
+  background-image: linear-gradient(
+      94deg,
+      #fff 9.65%,
+      rgba(255, 255, 255, 0.85) 26.08%,
+      rgba(255, 255, 255, 0.19) 52.74%,
+      rgba(255, 255, 255, 0) 74.46%
+    ),
+    url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  max-width: 1488px;
+  height: 658px;
+  margin: 0 auto;
+}
+
+.container-content {
+  padding-left: 88px;
+  max-width: 530px;
+}
+
+.hero-cosmetology-clinic {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.hero-title {
+  margin-bottom: 40px;
+  font-family: var(--font-brand-secondary);
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+  text-transform: capitalize;
+  color: var(--color-primary-light-blue);
+}
+
+.hero-free-consultation {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-secondary-dark-gray);
+}

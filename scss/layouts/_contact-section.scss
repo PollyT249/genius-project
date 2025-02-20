@@ -1,0 +1,25 @@
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.contact-map {
+  border: none;
+  border-radius: 32px;
+  flex-shrink: 0;
+}
+
+.contact-form-container {
+  border-radius: 32px;
+  padding: 48px 56px;
+  background-image: url(../images/form-background.png);
+  background-color: var(--color-primary-dark-blue);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

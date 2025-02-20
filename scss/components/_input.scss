@@ -1,0 +1,24 @@
+.form-label {
+  position: absolute;
+  top: 18px;
+  left: 32px;
+}
+
+.form-input {
+  padding: 18px 32px;
+  width: 100%;
+  border: 2px solid var(--color-secondary-light-gray);
+  border-radius: 32px;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  background-color: var(--color-secondary-light-gray);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-primary-white);
+  font-size: 13px;
+  line-height: 1.5;
+}

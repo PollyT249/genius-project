@@ -1,0 +1,24 @@
+.procedures-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.procedures-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.procedures-item {
+  flex-basis: calc((100% - 32px) / 3);
+}
+
+.procedures-img {
+  transition: transform 0.2s;
+}
+
+.procedures-img:hover {
+  transform: scale(1.05);
+}
