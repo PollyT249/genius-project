@@ -1,0 +1,15 @@
+.why-us-card {
+  &__text {
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    color: #000;
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    fill: var(--color-primary-light-blue);
+  }
+}

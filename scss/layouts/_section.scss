@@ -1,16 +1,12 @@
 .section {
   padding: 48px 0;
-}
 
-.section-title {
-  font-family: var(--font-brand-secondary);
-  font-weight: 700;
-  font-size: 64px;
-  text-align: center;
-  color: var(--color-primary-dark-blue);
-  margin-bottom: 48px;
-}
-
-.section-title .color-accent {
-  color: var(--color-primary-light-blue);
+  &__title {
+    font-family: var(--font-brand-secondary);
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: var(--color-primary-dark-blue);
+    margin-bottom: 48px;
+  }
 }

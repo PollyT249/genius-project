@@ -1,98 +1,91 @@
 .about-us-section {
   padding-top: 63px;
-}
 
-.about-us-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.about-us-content {
-  max-width: 700px;
-  font-size: 22px;
-  line-height: 1.7;
-  color: var(--color-primary-dark-blue);
-}
-
-.about-us-title {
-  margin-bottom: 40px;
-  text-align: start;
-  line-height: 1.5;
-}
-
-.about-us-title .brand-color-accent {
-  color: var(--color-primary-light-blue);
-  text-transform: capitalize;
-}
-
-.we-offer {
-  margin-bottom: 40px;
-}
-
-.we-guarantee {
-  margin-bottom: 0;
-}
-
-.we-guarantee .brand-accent {
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
-.woman-procedure {
-  position: relative;
-}
-
-.woman-before {
-  border-radius: 50%;
-  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
-  transform: translateX(-169px);
-}
-
-.icon-star-1 {
-  width: 64px;
-  height: 64px;
-  position: absolute;
-  left: -50px;
-  bottom: 230px;
-  fill: var(--color-secondary-dark-blue);
-  animation: scale 5s infinite linear;
-}
-
-.icon-star-2 {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 0;
-  top: 40px;
-  fill: var(--color-primary-light-blue);
-  animation: scale 4s infinite linear;
-}
-
-.icon-star-3 {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  right: 40px;
-  top: 260px;
-  fill: var(--color-secondary-light-gray);
-  animation: scale 3s infinite linear;
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(1);
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
   }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
-.woman-after {
-  border-radius: 50%;
-  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
-  transform: translateY(40px);
+  &__text {
+    max-width: 700px;
+    font-size: 22px;
+    line-height: 1.7;
+    color: var(--color-primary-dark-blue);
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-family: var(--font-brand-secondary);
+    font-size: 64px;
+    font-weight: 700;
+    text-align: start;
+    line-height: 1.5;
+  }
+
+  &__we-offer {
+    margin-bottom: 40px;
+  }
+
+  &__we-guarantee {
+    margin-bottom: 0;
+  }
+
+  &__woman-procedure {
+    position: relative;
+  }
+
+  &__woman-before {
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+    transform: translateX(-169px);
+  }
+
+  &__icon-star-1 {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: -50px;
+    bottom: 230px;
+    fill: var(--color-secondary-dark-blue);
+    animation: scale 5s infinite linear;
+  }
+
+  &__icon-star-2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    fill: var(--color-primary-light-blue);
+    animation: scale 4s infinite linear;
+  }
+
+  &__icon-star-3 {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 40px;
+    top: 260px;
+    fill: var(--color-secondary-light-gray);
+    animation: scale 3s infinite linear;
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  &__woman-after {
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+    transform: translateY(40px);
+  }
 }
