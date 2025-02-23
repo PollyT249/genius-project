@@ -29,44 +29,40 @@
   background-color: var(--color-primary-dark-blue);
   border-radius: 48px;
   overflow-y: auto;
-}
 
-.modal-btn-close {
-  position: absolute;
-  top: 42px;
-  right: 42px;
-}
+  &__btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+  }
 
-.order-call {
-  margin-bottom: 40px;
-  font-weight: 700;
-  font-size: 64px;
-  text-align: center;
-  color: var(--color-primary-white);
-}
+  &__order-call {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: var(--color-primary-white);
+  }
 
-.get-gift {
-  margin-bottom: 32px;
-  font-weight: 600;
-  font-size: 22px;
-  text-align: center;
-  color: var(--color-primary-white);
-}
+  &__get-gift {
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: var(--color-primary-white);
+  }
 
-.get-gift .color-accent {
-  color: var(--color-primary-light-blue);
-}
+  &__form-field {
+    position: relative;
+    margin-bottom: 24px;
+  }
 
-.form-field {
-  position: relative;
-  margin-bottom: 24px;
-}
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
 
-.form-button {
-  display: block;
-  margin: 0 auto;
-}
-
-.form-button:hover {
-  color: var(--color-primary-white);
+    &:hover {
+      color: var(--color-primary-white);
+    }
+  }
 }

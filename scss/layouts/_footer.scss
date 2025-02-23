@@ -6,65 +6,73 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-.footer::after {
-  position: absolute;
-  width: 258px;
-  height: 152px;
-  right: -10px;
-  bottom: 0;
-  background-repeat: no-repeat;
-  background-image: url("../images/decor-cosmetic-bottles.png");
-  content: "";
-}
+  &::after {
+    position: absolute;
+    width: 258px;
+    height: 152px;
+    right: -10px;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-image: url("../images/decor-cosmetic-bottles.png");
+    content: "";
+  }
 
-.footer-container {
-  display: flex;
-  gap: 20px;
-}
+  &__content {
+    display: flex;
+    gap: 20px;
+  }
 
-.footer-nav,
-.footer-address {
-  display: flex;
-  flex-basis: 50%;
-  gap: 20px;
-}
+  &__nav,
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+  }
 
-.footer-logo,
-.footer-menu {
-  flex-grow: 1;
-}
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
 
-.address-list,
-.address-info {
-  flex-grow: 1;
-}
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+  }
 
-.footer-link,
-.address-link {
-  margin-bottom: 16px;
-  font-size: 16px;
-  color: var(--color-primary-white);
-  text-decoration: none;
-  transition: color 0.2s;
-}
+  &__link,
+  &__address-link {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--color-primary-white);
+    text-decoration: none;
+    transition: color 0.2s;
 
-.footer-link:hover,
-.address-link:hover {
-  color: var(--color-primary-light-blue);
-}
+    &:hover,
+    &:hover {
+      color: var(--color-primary-light-blue);
+    }
+  }
 
-.contact-icon {
-  fill: var(--color-primary-white);
-  transition: fill 0.2s;
-}
+  &__address-copyright {
+    font-size: 13px;
+    color: var(--color-secondary-light-gray);
+  }
 
-.contact-icon:hover {
-  fill: var(--color-primary-light-blue);
-}
+  &__contact-icons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
 
-.address-copyright {
-  font-size: 13px;
-  color: var(--color-secondary-light-gray);
+  &__contact-icon {
+    width: 42px;
+    height: 42px;
+    fill: var(--color-primary-white);
+    transition: fill 0.2s;
+
+    &:hover {
+      fill: var(--color-primary-light-blue);
+    }
+  }
 }

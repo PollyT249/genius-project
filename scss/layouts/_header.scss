@@ -45,6 +45,8 @@
   }
 
   &__link-icon {
+    width: 32px;
+    height: 32px;
     fill: var(--color-primary-dark-blue);
     transition: fill 0.2s;
   }
