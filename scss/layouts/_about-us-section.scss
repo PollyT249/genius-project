@@ -8,10 +8,14 @@
   }
 
   &__text {
-    max-width: 700px;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.7;
     color: var(--color-primary-dark-blue);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      text-align: left;
+    }
   }
 
   &__title {
@@ -32,7 +36,12 @@
   }
 
   &__woman-procedure {
-    position: relative;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      position: relative;
+      display: block;
+    }
   }
 
   &__woman-before {

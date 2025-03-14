@@ -1,14 +1,20 @@
 .header {
-  padding: 6px 0;
-  backdrop-filter: blur(10px);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.25);
+  padding: 0;
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(255, 255, 250) 0%,
+    rgb(245, 244, 244) 47%,
+    rgb(208, 203, 200) 90%
+  );
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     padding: 32px 0;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
   }
 
   &__container {
