@@ -1,10 +1,15 @@
 .about-us-section {
   padding-top: 63px;
 
-  &__content {
+  &__container {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
+  }
+
+  &__content {
+    max-width: 710px;
   }
 
   &__text {
@@ -19,12 +24,17 @@
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     font-family: var(--font-brand-secondary);
-    font-size: 64px;
+    font-size: 32px;
     font-weight: 700;
     text-align: start;
     line-height: 1.5;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+      margin-bottom: 40px;
+    }
   }
 
   &__we-offer {

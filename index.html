@@ -65,7 +65,9 @@
             </svg>
           </button>
           <div class="mobile-menu">
-            <button class="menu-btn-close" type="button">Close</button>
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
           </div>
         </div>
       </div>
@@ -91,31 +93,37 @@
       </section>
       <section class="about-us-section" id="about-us-section">
         <div class="container">
-          <div class="about-us-section__content">
-            <div class="about-us-section__text">
-              <h2 class="about-us-section__title">
-                Перевтілюйтесь <br />в
-                <span lang="en" class="text-brand text-capitalized"
-                  >beauty zone!</span
-                >
-              </h2>
-              <p class="about-us-section__we-offer">
-                Наша косметологічна клініка пропонує вам професійні послуги з
-                догляду за шкірою обличчя та тіла.
-              </p>
-              <p class="about-us-section__we-guarantee">
-                B
-                <span lang="en" class="text-bold text-capitalized"
-                  >beauty zone</span
-                >
-                ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
-                косметологічні процедури та препарати допоможуть вам
-                підтримувати свою красу та молодість.
-              </p>
-              <p>З нами краса назавжди!</p>
+          <div class="about-us-section__container">
+            <div class="about-us-section__content">
+              <div class="about-us-section__text">
+                <h2 class="about-us-section__title">
+                  Перевтілюйтесь <br />в
+                  <span lang="en" class="text-brand text-capitalized"
+                    >beauty zone!</span
+                  >
+                </h2>
+                <p class="about-us-section__we-offer">
+                  Наша косметологічна клініка пропонує вам професійні послуги з
+                  догляду за шкірою обличчя та тіла.
+                </p>
+                <p class="about-us-section__we-guarantee">
+                  B
+                  <span lang="en" class="text-bold text-capitalized"
+                    >beauty zone</span
+                  >
+                  ми гарантуємо найвищі стандарти якості та приємний сервіс.
+                  Наші косметологічні процедури та препарати допоможуть вам
+                  підтримувати свою красу та молодість.
+                </p>
+                <p>З нами краса назавжди!</p>
+              </div>
             </div>
             <div class="about-us-section__woman-procedure">
               <img
+                srcset="
+                  ./images/woman-before-procedure.jpg    1x,
+                  ./images/woman-before-procedure@2x.jpg 2x
+                "
                 src="./images/woman-before-procedure.jpg"
                 alt="Жіноче обличчя перед процедурою"
                 class="about-us-section__woman-before"
@@ -131,6 +139,10 @@
               </svg>
 
               <img
+                srcset="
+                  ./images/woman-after-procedure.jpg    1x,
+                  ./images/woman-after-procedure@2x.jpg 2x
+                "
                 src="./images/woman-after-procedure.jpg"
                 alt="Жіноче обличчя після процедури"
                 class="about-us-section__woman-after"
@@ -208,6 +220,10 @@
                 <li class="procedures-section__item">
                   <article class="procedures-card">
                     <img
+                      srcset="
+                        ./images/face-mask.jpg    1x,
+                        ./images/face-mask@2x.jpg 2x
+                      "
                       class="procedures-card__img"
                       src="./images/face-mask.jpg"
                       alt="Жінка з маскою на обличчі"
@@ -217,6 +233,10 @@
                 <li class="procedures-section__item">
                   <article class="procedures-card">
                     <img
+                      srcset="
+                        ./images/face-injection.jpg    1x,
+                        ./images/face-injection@2x.jpg 2x
+                      "
                       class="procedures-card__img"
                       src="./images/face-injection.jpg"
                       alt="Жінка, якій роблять ін'єкцію на обличчі"
@@ -226,6 +246,10 @@
                 <li class="procedures-section__item">
                   <article class="procedures-card">
                     <img
+                      srcset="
+                        ./images/face-cleaning.jpg    1x,
+                        ./images/face-cleaning@2x.jpg 2x
+                      "
                       class="procedures-card__img"
                       src="./images/face-cleaning.jpg"
                       alt="Жінка, якій роблять чистку обличчя"
