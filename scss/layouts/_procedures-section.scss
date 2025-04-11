@@ -1,18 +1,24 @@
 .procedures-section {
-  &__content {
+  &__slider {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 32px;
   }
 
-  &__list {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
+  &__container {
+    overflow: hidden;
   }
 
-  &__item {
-    flex-basis: calc((100% - 32px) / 3);
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
   }
 }
