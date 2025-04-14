@@ -8,14 +8,19 @@
   background-size: cover;
 
   &::after {
-    position: absolute;
-    width: 258px;
-    height: 152px;
-    right: -10px;
-    bottom: 0;
-    background-repeat: no-repeat;
-    background-image: url("../images/decor-cosmetic-bottles.png");
-    content: "";
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      position: absolute;
+      width: 258px;
+      height: 152px;
+      right: -10px;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-image: url("../images/decor-cosmetic-bottles.png");
+      content: "";
+    }
   }
 
   &__content {
