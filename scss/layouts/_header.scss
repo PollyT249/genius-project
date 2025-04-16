@@ -75,6 +75,7 @@
     background-color: transparent;
     border: none;
     fill: var(--color-primary-white);
+    cursor: pointer;
 
     @media screen and (min-width: $bp-desktop) {
       display: none;
