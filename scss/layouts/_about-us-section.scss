@@ -1,9 +1,9 @@
 .about-us-section {
-  // padding-top: 20px;
+  padding-top: 20px;
 
-  // @media screen and (min-width: $bp-tablet) {
-  //   padding-top: 63px;
-  // }
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 86px;
+  }
 
   &__container {
     display: flex;
@@ -109,5 +109,23 @@
     border-radius: 50%;
     box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
     transform: translateY(40px);
+  }
+
+  &__star-container {
+    position: relative;
+  }
+
+  &__icon-star {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: 70px;
+    bottom: -60px;
+    fill: var(--color-secondary-dark-blue);
+    animation: scale 5s infinite linear;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }
